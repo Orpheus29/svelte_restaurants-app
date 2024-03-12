@@ -25,7 +25,7 @@
 <style lang="scss">
 	.filter {
 		@apply text-center bg-white shadow rounded-2xl p-2;
-		width: 4.7rem;
+		width: 5rem;
 
 		&.active {
 			@apply bg-slate-300;
@@ -33,9 +33,6 @@
 
 		.icon-wrapper {
 			@apply rounded-full flex items-center justify-center p-3;
-		}
-
-		.icon {
 		}
 
 		.name {

@@ -1,13 +1,14 @@
+import { wrap } from 'svelte-spa-router/wrap';
+
 import Home from './components/screens/home/Home.svelte';
-import Restaurant from './components/screens/restaurant/Restaurant.svelte';
 import NotFound from './components/screens/notFound/NotFound.svelte';
 
 export const routes = {
 	'/': Home,
 
-	'/restaurant/:name': Restaurant,
+	'/restaurant/:slug': wrap({
+    asyncComponent: () => import('./components/screens/restaurants/Restaurant.svelte')
+  }),
 
-	// Catch-all
-	// This is optional, but if present it must be the last
 	'*': NotFound,
 };

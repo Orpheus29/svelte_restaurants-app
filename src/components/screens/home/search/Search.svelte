@@ -40,7 +40,7 @@
 		}
 
 		input {
-			@apply bg-transparent text-[#111] outline-none;
+			@apply bg-transparent text-[#111] outline-none w-full;
 		}
 	}
 </style>

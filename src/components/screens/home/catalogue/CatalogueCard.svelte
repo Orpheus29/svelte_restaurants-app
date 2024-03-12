@@ -18,9 +18,8 @@
 	} = restaurant;
 </script>
 
-<button class="restaurant" on:click={() => {}}>
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<a use:link={`/restaurant/${slug}`}>
+<div class="restaurant">
+	<a href={`/restaurant/${slug}`} use:link>
 		<img {src} alt={name} />
 	</a>
 
@@ -60,7 +59,7 @@
 			</div>
 		</div>
 	</div>
-</button>
+</div>
 
 <style lang="scss">
 	.restaurant {
