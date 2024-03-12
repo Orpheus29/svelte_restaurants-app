@@ -12,7 +12,7 @@
 
 <h2 align="center">📋About📋</h2>
 
-The simple Svelte application includes routing, filtering, and uses a state manager as straightforwardly as only Svelte can. All icons are sourced from [Svelte Icons](https://svelte-icons.vercel.app/).
+The simple Svelte application includes routing, filtering, and uses a dedicated state manager as straightforwardly as only Svelte can. All icons are sourced from [Svelte Icons](https://svelte-icons.vercel.app/).
 
 <h2 align="center">🧙‍♂️Technologies used🧙‍♂️</h2>
 
