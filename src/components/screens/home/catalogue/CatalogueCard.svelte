@@ -85,7 +85,7 @@
 			}
 
 			.cuisines {
-				@apply text-[#ccc] text-sm;
+				@apply text-[#aaa] text-sm;
 			}
 
 			.rating {

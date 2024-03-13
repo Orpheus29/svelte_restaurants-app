@@ -4,23 +4,28 @@
 
 	const filters: IFilter[] = [
 		{
-			name: 'Cafe',
-			path: './images/icons/hamburger-icon.svg',
+			name: 'Fast food',
+			path: './images/icons/hamburger.svg',
       color: '#eaf2ff',
 		},
 		{
-      name: 'Cinema',
-			path: './images/icons/popcorn-icon.svg',
-      color: '#e4f6ea',
+      name: 'Restaurant',
+			path: './images/icons/restaurant.svg',
+      color: '#e2fcea',
 		},
 		{
-      name: 'Stand-up',
-			path: './images/icons/old-microphone-icon.svg',
+      name: 'Sushi',
+			path: './images/icons/noodles.svg',
       color: '#feefea',
 		},
 		{
+      name: 'Vegan',
+			path: './images/icons/vegan.svg',
+      color: '#e4f6ea',
+		},
+		{
       name: 'Ice cream',
-			path: './images/icons/ice-cream-cone-icon.svg',
+			path: './images/icons/ice-cream-cone.svg',
       color: '#fdf8e2',
 		},
 	];

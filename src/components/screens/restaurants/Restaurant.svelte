@@ -34,10 +34,10 @@
 
 <style lang="scss">
 	.header {
-		@apply flex items-end justify-center relative my-7;
+		@apply flex items-center justify-center relative my-7;
 
 		& .home {
-			@apply w-8  text-yellow-300 absolute left-5;
+			@apply w-8 text-yellow-300 absolute left-5;
 		}
 
 		&-title {

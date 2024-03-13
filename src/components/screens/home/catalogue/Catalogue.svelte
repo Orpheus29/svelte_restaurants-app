@@ -3,10 +3,10 @@
 	import CatalogueCard from './CatalogueCard.svelte';
 	import type { IRestaurant } from './restaurant.interface';
 
-	let visibleRestaurants: IRestaurant[] = [];
+	let filteredRestaurants: IRestaurant[] = [];
 
 	$: {
-		const filteredRestaurants = $restaurants.filter(restaurant => {
+		filteredRestaurants = $restaurants.filter(restaurant => {
 			if (
 				$filter.searchTerm &&
 				!restaurant.name
@@ -16,7 +16,7 @@
 				return false;
 			}
 
-      const filterValue = $filter.activeFilter.toLowerCase() as 'cafe' | 'cinema' | 'stand-up' | 'ice cream';
+      const filterValue = $filter.activeFilter.toLowerCase() as 'fast food' | 'restaurant' | 'sushi' | 'vegan' | 'ice cream';
 
 			if (
 				$filter.activeFilter &&
@@ -26,15 +26,17 @@
 			}
 			return true;
 		});
-
-		visibleRestaurants = filteredRestaurants;
 	}
 </script>
 
 <div class="catalogue">
-	{#each visibleRestaurants as restaurant (restaurant.slug)}
+  {#if filteredRestaurants.length}
+	{#each filteredRestaurants as restaurant (restaurant.slug)}
 		<CatalogueCard {restaurant} />
 	{/each}
+  {:else}
+  <p>We couldn't find any locations matching your query</p>
+  {/if}
 </div>
 
 <style lang="scss">

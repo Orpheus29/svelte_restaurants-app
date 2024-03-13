@@ -6,5 +6,5 @@ export interface IRestaurant {
 	rating: number;
 	distance: number;
 	imagePath: string;
-	categories: ('cafe' | 'cinema' | 'stand-up' | 'ice cream')[];
+	categories: ('fast food' | 'restaurant' | 'sushi' | 'vegan' | 'ice cream')[];
 }

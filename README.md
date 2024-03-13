@@ -12,7 +12,7 @@
 
 <h2 align="center">📋About📋</h2>
 
-The simple Svelte application includes routing, filtering, and uses a dedicated state manager as straightforwardly as only Svelte can. All icons are sourced from [Svelte Icons](https://svelte-icons.vercel.app/).
+This simple Svelte application implements routing, filtering, and uses a dedicated state manager as straightforwardly as only Svelte can. All icons are sourced from [Svelte Icons](https://svelte-icons.vercel.app/).
 
 <h2 align="center">🧙‍♂️Technologies used🧙‍♂️</h2>
 
@@ -28,12 +28,12 @@ The simple Svelte application includes routing, filtering, and uses a dedicated 
 npm install
 ```
 
-##### To compile, display on your screen and enable hot-reloads for seamless development:
+##### To compile, display and hot-reload for seamless development:
 ```
 npm start
 ```
 
-##### To compile and minify for production:
+##### To get ready for production:
 ```
 npm run build
 ```
